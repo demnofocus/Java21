@@ -1,7 +1,7 @@
 
 import java.util.StringTokenizer;
 
-public class TokenTester{
+class TokenTester{
     public static void main(String[] arguments){ 
         StringTokenizer st1, st2;
         

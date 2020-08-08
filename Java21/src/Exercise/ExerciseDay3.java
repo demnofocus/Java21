@@ -21,19 +21,17 @@ class ExerciseDay3{
         
     }
     
-    
-    
 }
 
 //02
 class Tank{
-        int height;
-        int weight;
-        int depth;
+    int height;
+    int weight;
+    int depth;
         
-        Tank(int height,int weight,int depth){
-            this.height = height;
-            this.weight = weight;
-            this.depth = depth;
-        }
+    Tank(int height,int weight,int depth){
+        this.height = height;
+        this.weight = weight;
+        this.depth = depth;
     }
+}

@@ -1,7 +1,7 @@
 
 import java.awt.Point;
 
-public class PointSetter{
+class PointSetter{
     public static void main(String[] arguments){
         Point location = new Point(4,13);
         System.out.println("Starting location:");

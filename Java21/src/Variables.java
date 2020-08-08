@@ -1,4 +1,4 @@
-public class Variables{
+class Variables{
     public static void main(String[] arguments){
         final char UP = 'U';
         byte initialLevel = 12;

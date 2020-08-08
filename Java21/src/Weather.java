@@ -1,4 +1,4 @@
-public class Weather{
+class Weather{
     public static void main(String[] arguments){
         float fah = 86;
         System.out.println(fah + " degrees Fahrenheit is...");
