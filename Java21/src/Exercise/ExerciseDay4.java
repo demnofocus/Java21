@@ -55,6 +55,48 @@ class ExerciseDay4{
         return count;
     }
     
+    //02
+    static void getLongValue(String[] arguments){
+        long value = 0;
+        String argument = "";
+        if(arguments.length > 0){
+            argument = arguments[0];
+        }
+        System.out.println("\narg: " + arguments.length);
+        switch(argument){
+            case "one":
+                value = 1;
+                break;
+            case "two":
+                value = 2;
+                break;
+            case "three":
+                value = 3;
+                break;
+            case "four":
+                value = 4;
+                break;
+            case "five":
+                value = 5;
+                break;
+            case "six":
+                value = 6;
+                break;
+            case "seven":
+                value = 7;
+                break;
+            case "eight":
+                value = 8;
+                break;
+            case "nine":
+                value = 9;
+                break;
+            case "ten":
+                value =10;
+        }
+        System.out.println(argument + " equals to " + value);
+    }
+    
     public static void main(String[] arguments){
        /*
          Practice
@@ -62,21 +104,23 @@ class ExerciseDay4{
        ExerciseDay4.cases();
        
        /*
+         Exercise 02
+       */
+       ExerciseDay4.getLongValue(arguments);
+       /*
          Exercise 01
        */
-       
        //year = 2020
        String[] monthList = new String[]{"January", "February", "March", "April",
            "May", "June", "July", "August", "September", "October", "November", "December"};
-       System.out.println("Dates of 2020: ");
+       System.out.println("\nDates of 2020: ");
        for(int i = 1; i<=12; i++){
            int totalDays = ExerciseDay4.countDays(i,2020);
            for(int j=1; j<=totalDays; j++){
                System.out.println("Date: " + monthList[i-1] + " " + j);
            }
            System.out.println("*");
-       }
-       
+       }  
     }
 }
 
