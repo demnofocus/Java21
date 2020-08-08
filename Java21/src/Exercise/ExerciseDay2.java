@@ -1,4 +1,6 @@
-public class Exercise{
+package Exercise;
+
+class ExerciseDay2{
     public static void main(String[] arguments){
         /*
         Day 2
