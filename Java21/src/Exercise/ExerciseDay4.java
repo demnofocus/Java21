@@ -63,6 +63,7 @@ class ExerciseDay4{
             argument = arguments[0];
         }
         System.out.println("\narg: " + arguments.length);
+        
         switch(argument){
             case "one":
                 value = 1;
