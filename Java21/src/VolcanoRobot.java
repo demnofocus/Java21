@@ -2,6 +2,9 @@ class VolcanoRobot{
     String status;
     int speed;
     float temperature;
+
+    VolcanoRobot() {
+    }
     
     void checkTemperature(){
         if(temperature>660){
