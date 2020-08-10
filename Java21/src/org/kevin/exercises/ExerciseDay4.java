@@ -1,4 +1,4 @@
-package Exercise;
+package org.kevin.exercises;
 
 class ExerciseDay4{
     /*

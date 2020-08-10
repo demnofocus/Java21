@@ -1,4 +1,4 @@
-package Exercise;
+package org.kevin.exercises;
 
 class ExerciseDay2{
     public static void main(String[] arguments){
