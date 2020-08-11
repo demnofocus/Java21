@@ -6,15 +6,32 @@ public class Item implements Comparable{
     private double retail;
     private int quantity;
     private double price;
+    private boolean noDiscount;     //Exercise 1
     
     Item(String idIn, String nameIn, String retailIn, String quanIn){
         id = idIn;
         name = nameIn;
         retail = Double.parseDouble(retailIn);
         quantity = Integer.parseInt(quanIn);
+        noDiscount = true;
         if(quantity > 400)
             price = retail * .7D;
         price = Math.floor( price * 100 + .5)/100;
+    }
+    
+    Item(String idIn, String nameIn, String retailIn, String quanIn, double discount){
+        id = idIn;
+        name = nameIn;
+        retail = Double.parseDouble(retailIn);
+        quantity = Integer.parseInt(quanIn);
+        noDiscount = (discount == 0);
+        if(quantity > 400)
+            price = retail * .7D;
+        if(noDiscount){
+            price = Math.floor( price * 100 + .5)/100;
+        }else{
+            price = (Math.floor( price * 100 + .5)/100) - discount;
+        }
     }
     
     @Override
@@ -44,6 +61,6 @@ public class Item implements Comparable{
     }
     
     public double getPrice(){
-        return price;
+            return price;
     }
 }
