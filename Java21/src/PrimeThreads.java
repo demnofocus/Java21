@@ -22,10 +22,20 @@ public class PrimeThreads{
                 if(!finder[j].finished){
                     complete = false;
                 }else{
+                    displayResult(finder[j]);
                     finder[j] = null;
                 }
             }
-            
+            try{
+                Thread.sleep(1000);
+            }catch(InterruptedException ie){
+                //do 
+            }
         }
+    }
+    
+    private void displayResult(PrimeFinder finder){
+        System.out.println("Prime " + finder.target + 
+                " is " + finder.prime);
     }
 }
