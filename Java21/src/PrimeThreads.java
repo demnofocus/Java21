@@ -1,15 +1,21 @@
+/*
+    Day 07
+*/
+
 public class PrimeThreads{
-    public static void main(String[] arguments){
+    public static void main(String[] arguments) throws 
+            PrimeFinder.NegativeNumberException{    //Exercise 02
         PrimeThreads pt = new PrimeThreads(arguments);
     }
     
-    public PrimeThreads(String[] args){
+    public PrimeThreads(String[] args) throws
+            PrimeFinder.NegativeNumberException{    //Exercise 02
         PrimeFinder[] finder = new PrimeFinder[args.length];
         for(int i = 0; i < args.length; i++){
             try{
                 long count = Long.parseLong(args[i]);
-                finder[i] = new PrimeFinder(count);
                 System.out.println("Looking for prime " + count );
+                finder[i] = new PrimeFinder(count);
             }catch(NumberFormatException nfe){
                 System.out.println("Error: " + nfe.getMessage());
             }
@@ -29,7 +35,7 @@ public class PrimeThreads{
             try{
                 Thread.sleep(1000);
             }catch(InterruptedException ie){
-                //do 
+                //do nothing
             }
         }
     }

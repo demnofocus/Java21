@@ -1,15 +1,28 @@
+/*
+    Day 07
+*/
+
 public class PrimeFinder implements Runnable{
     public long target;
     public long prime;
     public boolean finished = false;
     private Thread runner;
     
-    PrimeFinder(long inTarget){
-        target = inTarget;
-        if(runner == null){
+    PrimeFinder(long inTarget) throws NegativeNumberException{
+        try{
+            if(inTarget<0){
+                throw new NegativeNumberException("Invalid argument! "
+                        + "Argument was negative!"); //Exercise 01
+            }
+            target = inTarget;
+            if(runner == null){
             runner = new Thread(this);
             runner.start();
+            }
+        }catch(NegativeNumberException nne){
+           System.out.println("Error: " + nne.getMessage());
         }
+        
     }
     @Override
     public void run() {
@@ -35,6 +48,14 @@ public class PrimeFinder implements Runnable{
           }  
         }
         return true;
+    }
+
+    public static class NegativeNumberException extends Exception{
+        public NegativeNumberException() {
+        }
+        public NegativeNumberException(String msg) {
+            super(msg);
+        }
     }
     
 }
