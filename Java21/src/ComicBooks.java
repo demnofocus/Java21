@@ -25,18 +25,31 @@ public class ComicBooks{
         quality.put("good", price5);
         float price6 = 0.25F;
         quality.put("poor", price6);
+        
+        //Exercise 01
+        quality.put("pristine mint", 5F);
+        quality.put("coverless", 0.1F);
+        
         //set up collection.
-        Comic[] comix = new Comic[3];
+        Comic[] comix = new Comic[5];
         comix[0] = new Comic("Amazing Spider-Man", "1A", 
                 "very fine", 5_000.00F);
         comix[1] = new Comic("Incredible Hulk", "181", 
                 "near mint", 240.00F);
         comix[2] = new Comic("Cerebus", "1A", 
                 "good", 144.00F);
+        //Exercise
+        comix[3] = new Comic("Tin-tin", "112", 
+                "pristine mint", 850.00F);
+        comix[4] = new Comic("Terifics", "1B", 
+                "coverless", 120.00F);
         
         comix[0].setPrice((Float) quality.get(comix[0].condition));
         comix[1].setPrice((Float) quality.get(comix[1].condition));
-        comix[2].setPrice((Float) quality.get(comix[2].condition));
+        comix[2].setPrice((Float) quality.get(comix[2].condition));        
+        //Exercise
+        comix[3].setPrice((Float) quality.get(comix[3].condition));
+        comix[4].setPrice((Float) quality.get(comix[4].condition));
         
         for (Comic comix1 : comix) {
             System.out.println("Title: " + comix1.title);

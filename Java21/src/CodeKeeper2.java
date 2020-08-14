@@ -1,7 +1,7 @@
-
+/*
+    Day 08
+*/
 import java.util.ArrayList;
-import java.util.Iterator;
-
 public class CodeKeeper2{
     ArrayList<String> list;     //generics
     String[] codes = {"alpha", "lambda", "gamma", "delta", "zeta"};
