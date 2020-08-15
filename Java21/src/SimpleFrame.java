@@ -2,6 +2,9 @@
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 
+/*
+    Day 09
+*/
 public class SimpleFrame extends JFrame{
     public SimpleFrame(){
         super("Frame Title");

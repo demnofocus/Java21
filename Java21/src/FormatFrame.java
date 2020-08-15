@@ -6,6 +6,9 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.UIManager;
 
+/*
+    Day 09
+*/
 public class FormatFrame extends javax.swing.JFrame{
     JRadioButton[] teams = new JRadioButton[4];     //JRadioButton array
     

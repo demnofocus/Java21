@@ -1,8 +1,7 @@
-
 import java.awt.Point;
 
 /*
-   Day 05
+    Day 05
 */
 class Box2{
     int x1 = 0;

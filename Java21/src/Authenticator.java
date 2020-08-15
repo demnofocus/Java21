@@ -8,6 +8,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 
+/*
+    Day 09
+*/
 public class Authenticator extends javax.swing.JFrame {
     JTextField username = new JTextField(15);
     JPasswordField password = new JPasswordField(15);
