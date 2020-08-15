@@ -24,7 +24,7 @@ public class Subscriptions extends javax.swing.JFrame{
         JLabel subLabel = new JLabel("RSS Subscriptions:");
         panel.add(subLabel);
         subList.setVisibleRowCount(8);
-        JScrollPane scroller = new JScrollPane(subList);
+        JScrollPane scroller = new JScrollPane(subList);    //container
         panel.add(scroller);
         super.add(panel);
         super.setVisible(true);
