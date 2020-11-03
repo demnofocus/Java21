@@ -49,6 +49,7 @@ public class FormatChooser extends JFrame implements ItemListener {
         }
     }
     
+    @Override
     public Insets getInsets(){
         return new  Insets(50, 10, 10, 10);
     }
