@@ -25,7 +25,8 @@ public class MousePrank extends JFrame implements ActionListener{
         super.add(BorderLayout.NORTH, message);
         PrankPanel prank = new PrankPanel();
         prank.ok.addActionListener(this);
-        
+        super.add(BorderLayout.CENTER, prank);
+        super.setVisible(true);
     }
 
     @Override
