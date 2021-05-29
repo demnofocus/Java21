@@ -4,7 +4,7 @@ import javax.swing.UIManager;
 
 
 /*
-    Day 12 - Grid layout
+    Day 11 - Grid layout
 */
 public class MessageFrame extends JFrame {
     public MessageFrame() {

@@ -7,7 +7,7 @@ import javax.swing.JTextField;
 
 
 /*
-    Day 12 - Grid layout
+    Day 11 - Grid layout
 */
 public class MessagePanel extends JPanel {
     GridBagLayout gridbag = new GridBagLayout();

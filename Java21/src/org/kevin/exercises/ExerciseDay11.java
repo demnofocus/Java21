@@ -8,8 +8,8 @@ import javax.swing.JPanel;
 /**
  * Grid Layouts
  */
-public class ExerciseDay12 extends JFrame {
-    public ExerciseDay12() {
+public class ExerciseDay11 extends JFrame {
+    public ExerciseDay11() {
         //Three Buttons
         super("Program");
         super.setSize(350, 225);
@@ -29,6 +29,6 @@ public class ExerciseDay12 extends JFrame {
     }
     
     public static void main(String[] arguments){
-        ExerciseDay12 b3 = new ExerciseDay12();
+        ExerciseDay11 b3 = new ExerciseDay11();
     }
 }
